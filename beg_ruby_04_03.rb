@@ -47,7 +47,7 @@ query2 = {
 
 def product_filter(query)
   PRODUCTS.select do |item|
-    item[:name].downcase.split.include?(query[:q.downcase]) &&
+    item[:name].downcase.include?(query[:q.downcase]) &&
     item[:price] >= query[:price_min] &&
     item[:price] <= query[:price_max]
   end
