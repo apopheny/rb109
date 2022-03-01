@@ -10,7 +10,7 @@
 # Algorithm:
 # Define a method, find_primes, which has two parameters, int1 & int2
 # Initialize a local variable to an empty array, result
-# From int1 + 1 through int2 -1 check to see if the number is divisible only by 1 and itself
+# From int1 through int2 check to see if the number is divisible only by 1 and itself:
 #   Define a method which receives a number
 #   from 1 up to that number, see if the number divides evenly into the number, and store to an array if so
 #   Return true if array size == 2
@@ -34,3 +34,5 @@ def is_prime?(int)
 end
 
 find_primes(3, 10) #=> 3, 5, 7
+find_primes(5, 20)
+find_primes(1, 2) 
